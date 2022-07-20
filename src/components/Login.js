@@ -84,7 +84,7 @@ function Login(props) {
     if (props.checkUserLogin(login.email, login.password)) {
       setLoading(true);
       setTimeout(() => {
-        props.successToast("You logged into your account!");
+        props.successToast("You logged into your Account!");
         setLoading(false);
       }, 3000);
     } else {
