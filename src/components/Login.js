@@ -84,13 +84,13 @@ function Login(props) {
     if (props.checkUserLogin(login.email, login.password)) {
       setLoading(true);
       setTimeout(() => {
-        props.successToast("You logged into your account!");
+        props.successToast("You logged into your account successfully!");
         setLoading(false);
       }, 3000);
     } else {
       setLoading(true);
       setTimeout(() => {
-        props.errorToast("There is no user with this email and password!");
+        props.errorToast("There is no user with this Email and Password!");
         setLoading(false);
       }, 3000);
     }
